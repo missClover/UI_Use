@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.ui_use.MainActivity"
+    android:orientation="vertical">
+
+    <!--每一个控件都具有visibility属性-->
+    <!--UI中的Button-->
+    <!--系统默认会把小写字母变成大写字母， android:textAllCaps="false"可以解决-->
+    <!--UI中的EditText-->
+    <!--hint指定一段提示性文本-->
+    <!--android:maxLines指定行数的多少-->
+    <!--UI中的ImageView-->
+    <!--可以动态换照片-->
+    <!--UI中的ProgressBar-->
+    <!--设置进度条，设置刷新图标-->
+    <!--setProgress()可以设置进度条的进度-->
+    <!--setVisibility()可以设置给该控件设置可见性-->
+    <!--UI中的AlertDialog-->
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/img_1"
+        android:src="@drawable/img_1"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/proB_2"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/proB_1"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:max="100"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隐藏"
+            android:id="@+id/proB_btn_3"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载"
+            android:id="@+id/proD_btn_1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/proB_btn_1"
+            android:layout_weight="1"
+            android:text="快退"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/proB_btn_2"
+            android:layout_weight="1"
+            android:text="快进"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_2"
+        android:textColorHint="@color/colorAccent"
+        android:hint="account number"
+        android:maxLines="2"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_1"
+        android:textColorHint="@color/colorAccent"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:maxLines="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_1"
+            android:text="Eyes"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginRight="50dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_2"
+            android:text="ImageT"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_3"
+            android:text="ImageB"
+            android:textAllCaps="false"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
